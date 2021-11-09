@@ -134,7 +134,7 @@ public class Banner<T, BA extends BannerAdapter<T, ? extends RecyclerView.ViewHo
         mLoopTask = new AutoLoopTask(this);
         mViewPager2 = new ViewPager2(context);
         mViewPager2.setLayoutParams(new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-        mViewPager2.setOffscreenPageLimit(2);
+        mViewPager2.setOffscreenPageLimit(5);
         mViewPager2.registerOnPageChangeCallback(mPageChangeCallback);
         mViewPager2.setPageTransformer(mCompositePageTransformer);
         ScrollSpeedManger.reflectLayoutManager(this);
